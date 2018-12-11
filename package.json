@@ -1,8 +1,10 @@
 {
-  "name": "big-calendar",
+  "name": "jyve-react-calendar",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/build.js",
   "scripts": {
+    "build": "npm run clean && webpack",
     "clean": "rimraf dist",
     "clean:examples": "rimraf examples/dist",
     "examples": "npm run clean:examples && webpack-dev-server --config examples/webpack.config.js --mode development",
@@ -11,12 +13,18 @@
     "bump": "npx standard-version"
   },
   "dependencies": {
+    "antd": "^3.11.2",
+    "axios": "^0.18.0",
+    "axios-cache-adapter": "^2.1.1",
     "date-fns": "^1.29.0",
     "emotion": "^9.2.12",
+    "lodash": "^4.17.11",
     "moment": "^2.22.2",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
-    "react-emotion": "^9.2.12"
+    "react-emotion": "^9.2.12",
+    "react-big-calendar": "^0.20.2",
+    "react-day-picker": "^7.2.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
@@ -57,7 +65,10 @@
     "not op_mini all"
   ],
   "standard": {
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "ignore": [
+      "/dist"
+    ]
   },
   "husky": {
     "hooks": {
