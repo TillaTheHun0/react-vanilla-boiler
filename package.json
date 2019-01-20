@@ -1,5 +1,5 @@
 {
-  "name": "jyve-react-calendar",
+  "name": "react-vanilla-boiler",
   "version": "0.1.0",
   "private": true,
   "main": "dist/build.js",
