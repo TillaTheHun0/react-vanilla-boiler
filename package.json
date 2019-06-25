@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@emotion/styled": "^10.0.14",
-    "emotion": "^10.0.6",
+    "emotion": "^10.0.14",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0"
   },
