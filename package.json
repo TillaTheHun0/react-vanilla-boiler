@@ -16,7 +16,7 @@
     "@emotion/styled": "^10.0.6",
     "emotion": "^10.0.6",
     "react": "^16.10.0",
-    "react-dom": "^16.7.0-alpha.0"
+    "react-dom": "^16.10.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
